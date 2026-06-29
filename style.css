@@ -3,8 +3,8 @@ Fundo Escuro Principal: #1c1e1a
 Feltro da Mesa (Cards): #354727
 Madeira (Bordas): #5d4037
 Fundo Escuro Secundário (Header/Botões): #121312
-Texto Principal (Gelo): #E6FAFC
-Texto Secundário (Cinza Azulado): #A9BBBD
+Texto Principal (Gelo): #FFFFFF
+Texto Secundário (Cinza Azulado): #FFFFFF
 Verde Destaque: #97DB4F
 Vermelho Cassino: #A21C0A
 */
@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1c1e1a; /* Fundo principal escuro */
-    color: #E6FAFC; /* Texto gelo */
+    color: #FFFFFF; /* Texto gelo */
 }
 
 /* Seleção de texto temática */
@@ -35,11 +35,11 @@ header .logo {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #E6FAFC;
+    color: #FFFFFF;
 }
 
 nav a {
-    color: #A9BBBD; /* Cinza azulado para links não ativos */
+    color: #FFFFFF; /* Cinza azulado para links não ativos */
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s;
@@ -74,7 +74,7 @@ section:last-of-type {
 
 .hero h1 {
     font-size: 3rem;
-    color: #E6FAFC;
+    color: #FFFFFF;
 }
 
 .hero h2 {
@@ -85,12 +85,12 @@ section:last-of-type {
 
 .hero p {
     font-size: 1.2rem;
-    color: #A9BBBD; /* Cinza azulado para melhor leitura */
+    color: #FFFFFF; /* Cinza azulado para melhor leitura */
     margin-bottom: 30px;
 }
 
 .btn-primary {
-    background-color: #E6FAFC;
+    background-color: #FFFFFF;
     color: #1c1e1a;
     padding: 15px 30px;
     border: none;
@@ -141,13 +141,13 @@ section:last-of-type {
     /* O padrão de fatias conforme image_5dc180.png */
     background: conic-gradient(
         #A21C0A 0deg 45deg,    /* Vermelho */
-        #E6FAFC 45deg 90deg,   /* Branco/Gelo */
+        #FFFFFF 45deg 90deg,   /* Branco/Gelo */
         #A21C0A 90deg 135deg,  /* Vermelho */
-        #E6FAFC 135deg 180deg, /* Branco/Gelo */
+        #FFFFFF 135deg 180deg, /* Branco/Gelo */
         #A21C0A 180deg 225deg, /* Vermelho */
-        #E6FAFC 225deg 270deg, /* Branco/Gelo */
+        #FFFFFF 225deg 270deg, /* Branco/Gelo */
         #A21C0A 270deg 315deg, /* Vermelho */
-        #E6FAFC 315deg 360deg  /* Branco/Gelo */
+        #FFFFFF 315deg 360deg  /* Branco/Gelo */
     );
     
     /* Borda preta grossa externa e interna */
@@ -172,7 +172,7 @@ section:last-of-type {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 1.2rem;
-    color: #E6FAFC;
+    color: #FFFFFF;
 }
 
 .team-member p {
@@ -225,7 +225,7 @@ section:last-of-type {
 
 .features-section h2 {
     font-size: 2.5rem;
-    color: #E6FAFC;
+    color: #FFFFFF;
     margin-bottom: 50px;
     font-weight: bold;
 }
@@ -268,14 +268,14 @@ section:last-of-type {
 
 .feature-item h3 {
     font-size: 1.5rem;
-    color: #E6FAFC;
+    color: #FFFFFF;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .feature-item p {
     font-size: 1rem;
-    color: #A9BBBD; /* Ajustado para leitura confortável no feltro verde */
+    color: #FFFFFF; /* Ajustado para leitura confortável no feltro verde */
     line-height: 1.6;
     margin: 0;
 }
