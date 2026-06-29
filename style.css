@@ -1,25 +1,33 @@
-/* Paleta de Cores:
-Fundo Claro: #E6FAFC
-Cinza Azulado: #A9BBBD
-Verde Claro: #97DB4F
-Verde Médio: #567D2D
-Verde Escuro (Fundo principal): #354727
-Vermelho (Destaques): #A21C0A
+/* Paleta de Cores CROUPIER (Baseada no Next.js):
+Fundo Escuro Principal: #1c1e1a
+Feltro da Mesa (Cards): #354727
+Madeira (Bordas): #5d4037
+Fundo Escuro Secundário (Header/Botões): #121312
+Texto Principal (Gelo): #E6FAFC
+Texto Secundário (Cinza Azulado): #A9BBBD
+Verde Destaque: #97DB4F
+Vermelho Cassino: #A21C0A
 */
 
 body {
     font-family: 'Inter', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #354727; 
-    color: #E6FAFC;
+    background-color: #1c1e1a; /* Fundo principal escuro */
+    color: #E6FAFC; /* Texto gelo */
+}
+
+/* Seleção de texto temática */
+::selection {
+    background-color: #97DB4F;
+    color: #1c1e1a;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: #2a381f; 
+    background-color: #121312; /* Tom mais escuro do botão submit */
     border-bottom: 3px solid #A21C0A; 
 }
 
@@ -27,10 +35,11 @@ header .logo {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
+    color: #E6FAFC;
 }
 
 nav a {
-    color: #A9BBBD;
+    color: #A9BBBD; /* Cinza azulado para links não ativos */
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s;
@@ -43,6 +52,11 @@ nav a:hover {
 section {
     padding: 60px 50px;
     text-align: center;
+    border-bottom: 3px solid #A21C0A; 
+}
+
+section:last-of-type {
+    border-bottom: none;
 }
 
 .hero {
@@ -50,6 +64,7 @@ section {
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    border-bottom: 3px solid #A21C0A; 
 }
 
 .hero-content {
@@ -62,26 +77,33 @@ section {
     color: #E6FAFC;
 }
 
+.hero h2 {
+    font-size: 2rem;
+    color: #97DB4F;
+    margin-top: 0;
+}
+
 .hero p {
     font-size: 1.2rem;
-    color: #A9BBBD;
+    color: #A9BBBD; /* Cinza azulado para melhor leitura */
     margin-bottom: 30px;
 }
 
 .btn-primary {
     background-color: #E6FAFC;
-    color: #354727;
+    color: #1c1e1a;
     padding: 15px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Arredondamento um pouco mais moderno */
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: #97DB4F;
+    transform: scale(0.98); /* Efeito de clique do Next.js */
 }
 
 .video-container {
@@ -96,11 +118,12 @@ section {
 }
 
 .team-member {
-    background-color: #2a381f;
+    background-color: #354727; /* Feltro da mesa */
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #567D2D;
+    border: 4px solid #5d4037; /* Borda de madeira */
     width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .team-member img {
@@ -115,9 +138,9 @@ section {
     margin-top: 30px;
     border-radius: 10px;
     overflow: hidden; 
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    border: 5px solid #567D2D; 
-    background-color: #E6FAFC;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 8px solid #5d4037; /* Borda de madeira espessa remetendo à mesa */
+    background-color: #1c1e1a;
     max-width: 1000px; 
     margin-left: auto;
     margin-right: auto;
@@ -126,4 +149,55 @@ section {
 .miro-container iframe {
     display: block;
     width: 100%;
+}
+
+.features-section {
+    background-color: #121312; /* Fundo alternativo para destacar os cards */
+    padding: 60px 50px;
+    text-align: center;
+    border-bottom: 3px solid #A21C0A; 
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #E6FAFC;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #354727; /* Feltro central */
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #97DB4F;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra interna sutil */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #E6FAFC;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #A9BBBD; /* Ajustado para leitura confortável no feltro verde */
+    line-height: 1.6;
+    margin: 0;
 }
