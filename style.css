@@ -1,0 +1,129 @@
+/* Paleta de Cores:
+Fundo Claro: #E6FAFC
+Cinza Azulado: #A9BBBD
+Verde Claro: #97DB4F
+Verde Médio: #567D2D
+Verde Escuro (Fundo principal): #354727
+Vermelho (Destaques): #A21C0A
+*/
+
+body {
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #354727; 
+    color: #E6FAFC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #2a381f; 
+    border-bottom: 3px solid #A21C0A; 
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #A9BBBD;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #97DB4F;
+}
+
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #E6FAFC;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #A9BBBD;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #E6FAFC;
+    color: #354727;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #97DB4F;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background-color: #2a381f;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #567D2D;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #A21C0A;
+}
+
+.miro-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border: 5px solid #567D2D; 
+    background-color: #E6FAFC;
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.miro-container iframe {
+    display: block;
+    width: 100%;
+}
